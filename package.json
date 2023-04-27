@@ -1,0 +1,28 @@
+{
+  "name": "ucloud-homework-backup-selenium",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Moozon <i@moo.zone>",
+  "license": "MIT",
+  "keywords": ["selenium", "node.js", "javascript"],
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node src/index.js",
+    "prod": "cross-env NODE_ENV=production node src/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "chromedriver": "^112.0.0",
+    "inquirer": "^9.2.0",
+    "selenium-webdriver": "^4.9.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.39.0"
+  }
+}
