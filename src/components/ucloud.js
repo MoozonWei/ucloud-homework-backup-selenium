@@ -46,6 +46,7 @@ export default async function ucloud(driver) {
   await fluentlyClick(driver, '#tab-second') // 点击“全部作业”
 
   const totalPageCount = Number(await (await fluentlyGetEl(driver, '.el-pager>li:last-child')).getText())
+  
   let { pageNum } = await inquirer.prompt([{
     type: 'number',
     name: 'pageNum',

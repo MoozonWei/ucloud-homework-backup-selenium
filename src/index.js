@@ -1,7 +1,7 @@
 import { Builder } from 'selenium-webdriver'
 import { Options } from 'selenium-webdriver/chrome.js'
 import 'chromedriver'
-import inquirer from 'inquirer'
+import { confirm } from '@inquirer/prompts'
 import dotenv from 'dotenv'
 import auth from './components/auth.js'
 import ucloud from './components/ucloud.js'
@@ -40,12 +40,10 @@ catch (e) {
   console.error(e)
 }
 finally {
-  const ans = (await inquirer.prompt([{
-    type: 'confirm',
-    name: 'ans',
+  const ans = await confirm({
     message: '是否关闭浏览器?',
     default: false,
-  }])).ans
+  })
   if (ans)
     await driver.quit()
 }

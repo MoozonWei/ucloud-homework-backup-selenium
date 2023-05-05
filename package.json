@@ -19,6 +19,7 @@
     "test": "echo \"no test\""
   },
   "dependencies": {
+    "@inquirer/prompts": "^1.0.1",
     "chromedriver": "^112.0.0",
     "inquirer": "^9.2.0",
     "dotenv": "^16.0.3",
