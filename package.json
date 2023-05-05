@@ -1,7 +1,7 @@
 {
-  "name": "ucloud-homework-backup-selenium",
+  "name": "ucloud-bkp",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "",
   "author": "Moozon <i@moo.zone>",
   "license": "MIT",
@@ -30,6 +30,6 @@
     "eslint": "^8.39.0"
   },
   "bin": {
-    "uhbs": "bin/cli.js"
+    "ucloud-bkp": "bin/cli.js"
   }
 }
