@@ -24,5 +24,8 @@
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "eslint": "^8.39.0"
+  },
+  "bin": {
+    "uhbs": "bin/cli.js"
   }
 }
